@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FloraVision</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body{
+      background:#081107;
+      color:white;
+      overflow-x:hidden;
+    }
+
+    .hero{
+      min-height:100vh;
+      background:linear-gradient(to right,#081107,#0d1d0c);
+      padding:40px 0;
+    }
+
+    .navbar-custom{
+      background:rgba(255,255,255,0.05);
+      border:1px solid rgba(255,255,255,0.1);
+      backdrop-filter: blur(10px);
+      border-radius:50px;
+      padding:10px 30px;
+    }
+
+    .navbar-custom a{
+      color:white;
+      text-decoration:none;
+      margin:0 15px;
+    }
+
+    .navbar-custom a:hover{
+      color:#5cff72;
+    }
+
+    .hero-title{
+      font-size:70px;
+      font-weight:bold;
+      line-height:1.1;
+    }
+
+    .hero-text{
+      color:#cfcfcf;
+      margin-top:20px;
+      line-height:28px;
+    }
+
+    .btn-green{
+      background:#5cff72;
+      color:black;
+      border:none;
+      padding:12px 30px;
+      border-radius:30px;
+      font-weight:bold;
+      transition:0.3s;
+    }
+
+    .btn-green:hover{
+      background:white;
+    }
+
+    .glass-card{
+      background:rgba(255,255,255,0.08);
+      border:1px solid rgba(255,255,255,0.1);
+      backdrop-filter: blur(15px);
+      border-radius:30px;
+      padding:25px;
+      box-shadow:0 0 30px rgba(0,0,0,0.4);
+    }
+
+    .plant-img{
+      width:100%;
+      border-radius:25px;
+      height:350px;
+      object-fit:cover;
+    }
+
+    .section-title{
+      text-align:center;
+      font-size:50px;
+      margin:80px 0 50px;
+      font-weight:bold;
+    }
+
+    .plant-box{
+      background:rgba(255,255,255,0.05);
+      border:1px solid rgba(255,255,255,0.1);
+      backdrop-filter: blur(10px);
+      border-radius:35px;
+      padding:30px;
+      margin-bottom:40px;
+    }
+
+    .price{
+      color:#5cff72;
+      font-size:30px;
+      font-weight:bold;
+    }
+
+    .top-card{
+      background:rgba(255,255,255,0.05);
+      border:1px solid rgba(255,255,255,0.1);
+      border-radius:30px;
+      padding:20px;
+      transition:0.3s;
+      height:100%;
+    }
+
+    .top-card:hover{
+      transform:translateY(-10px);
+    }
+
+    .top-card img{
+      width:100%;
+      height:250px;
+      object-fit:cover;
+      border-radius:20px;
+    }
+
+    .review-box{
+      margin-top:40px;
+    }
+
+    @media(max-width:768px){
+      .hero-title{
+        font-size:45px;
+      }
+
+      .section-title{
+        font-size:35px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <section class="hero">
+    <div class="container">
+
+      <div class="d-flex justify-content-between align-items-center mb-5 flex-wrap gap-3">
+        <h2>🌿 FloraVision.</h2>
+
+        <div class="navbar-custom">
+          <a href="#">Plants Type</a>
+          <a href="#">More</a>
+          <a href="#">Contact</a>
+        </div>
+      </div>
+
+      <div class="row align-items-center gy-5">
+
+        <div class="col-lg-6">
+          <h1 class="hero-title">Earth’s <br> Exhale</h1>
+
+          <p class="hero-text">
+            Earth Exhale symbolizes the purity and vitality of the Earth’s natural environment and its essential role in sustaining life.
+          </p>
+
+          <div class="mt-4 d-flex gap-3 align-items-center">
+            <button class="btn-green">Buy Now</button>
+            <button class="btn btn-outline-light rounded-pill px-4">Live Demo</button>
+          </div>
+
+          <div class="glass-card review-box mt-5">
+            <div class="d-flex align-items-center mb-3">
+              <img src="https://randomuser.me/api/portraits/men/32.jpg" width="60" class="rounded-circle me-3">
+              <div>
+                <h5 class="mb-0">Ronnie Harris</h5>
+                <small>★★★★★</small>
+              </div>
+            </div>
+
+            <p>
+              I can’t express how thrilled I am with my new natural planter. They bring such a fresh and vibrant energy to my home.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="glass-card">
+            <img src="https://images.unsplash.com/photo-1545241047-6083a3684587?q=80&w=800&auto=format&fit=crop" class="plant-img">
+
+            <div class="mt-4">
+              <small>Indoor Plant</small>
+              <h2 class="mt-2">Aglaonema plant</h2>
+              <button class="btn-green mt-3">Buy Now</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <h2 class="section-title">Our Trendy Plants</h2>
+
+      <div class="plant-box">
+        <div class="row align-items-center gy-4">
+          <div class="col-lg-6">
+            <img src="https://images.unsplash.com/photo-1485955900006-10f4d324d411?q=80&w=800&auto=format&fit=crop" class="plant-img">
+          </div>
+
+          <div class="col-lg-6">
+            <h2>For Your Desks Decorations</h2>
+            <p class="hero-text">
+              The greenery adds a touch of nature and serenity to my workspace, making it feel more vibrant and calming.
+            </p>
+
+            <h3 class="price">Rs. 599/-</h3>
+
+            <button class="btn-green mt-3">Explore</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="plant-box">
+        <div class="row align-items-center gy-4 flex-lg-row-reverse">
+          <div class="col-lg-6">
+            <img src="https://images.unsplash.com/photo-1459156212016-c812468e2115?q=80&w=800&auto=format&fit=crop" class="plant-img">
+          </div>
+
+          <div class="col-lg-6">
+            <h2>Mini Succulent Plant</h2>
+            <p class="hero-text">
+              Beautiful indoor succulent plant that adds freshness and style to your modern home decor.
+            </p>
+
+            <h3 class="price">Rs. 399/-</h3>
+
+            <button class="btn-green mt-3">Explore</button>
+          </div>
+        </div>
+      </div>
+
+      <h2 class="section-title">Our Top Selling Plants</h2>
+
+      <div class="row g-4 mb-5">
+
+        <div class="col-lg-4 col-md-6">
+          <div class="top-card">
+            <img src="https://images.unsplash.com/photo-1545241047-6083a3684587?q=80&w=800&auto=format&fit=crop">
+            <h3 class="mt-4">Aglaonema Plant</h3>
+            <p class="price">Rs. 799/-</p>
+            <button class="btn-green w-100">Add To Cart</button>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <div class="top-card">
+            <img src="https://images.unsplash.com/photo-1485955900006-10f4d324d411?q=80&w=800&auto=format&fit=crop">
+            <h3 class="mt-4">Desk Decoration Plant</h3>
+            <p class="price">Rs. 599/-</p>
+            <button class="btn-green w-100">Add To Cart</button>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mx-auto">
+          <div class="top-card">
+            <img src="https://images.unsplash.com/photo-1459156212016-c812468e2115?q=80&w=800&auto=format&fit=crop">
+            <h3 class="mt-4">Mini Succulent</h3>
+            <p class="price">Rs. 399/-</p>
+            <button class="btn-green w-100">Add To Cart</button>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+</body>
+</html>
